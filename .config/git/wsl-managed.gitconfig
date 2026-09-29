@@ -1,0 +1,20 @@
+[user]
+	name = Kevin
+	email = kevin.yuhan.he@gmail.com
+[core]
+	autocrlf = input
+[fetch]
+	prune = true
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[rebase]
+	autoStash = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

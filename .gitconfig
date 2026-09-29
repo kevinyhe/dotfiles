@@ -1,0 +1,12 @@
+[include]
+	path = ~/.config/git/wsl-managed.gitconfig
+[credential]
+	helper = manager
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[url "https://github.com/UTFR/"]
+	insteadOf = git@github.com:UTFR/

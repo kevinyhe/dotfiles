@@ -1,0 +1,54 @@
+add_newline = false
+command_timeout = 1000
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vimcmd_symbol = "[<](bold yellow)"
+
+[directory]
+truncation_length = 4
+truncate_to_repo = true
+style = "bold blue"
+read_only = " 󰌾"
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style) )"
+
+[cmd_duration]
+min_time = 2000
+format = "took [$duration]($style) "
+style = "yellow"
+
+[status]
+disabled = false
+format = "[$status]($style) "
+style = "bold red"
+
+[jobs]
+symbol = "jobs "
+
+[python]
+python_binary = ["python"]
+symbol = " "
+
+[java]
+format = "via [${symbol}(${version})]($style) "
+symbol = " "
+
+[nodejs]
+format = "via [${symbol}(${version})]($style) "
+symbol = " "
+
+[rust]
+symbol = " "
+
+[c]
+symbol = " "
+
+[docker_context]
+symbol = " "
